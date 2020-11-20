@@ -1,0 +1,22 @@
+.header
+    background: $dark
+    height: 50px
+    color: $grey
+    font-size: 12px
+    line-height: 12px
+    display: flex
+    align-items: center
+    &__address
+        display: flex
+        align-items: center
+        font: inherit
+        &::before
+            content: url('./../img/icons/map.png')
+            width: 7px
+            height: 11px
+            margin-right: 10px
+    &__menu
+        .menu__item
+            margin-right: 40px
+            &:last-child
+                margin-right: 0

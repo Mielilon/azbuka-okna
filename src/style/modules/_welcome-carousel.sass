@@ -1,0 +1,64 @@
+.welcome-carousel
+    background: #F3F3F3
+    height: calc( 100vh - 245px )
+    background: rgb(0,0,0)
+    background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(9,9,121,0) 20%, rgba(9,9,121,0) 50%, rgba(0,0,0,0.05) 100%)
+    .owl-carousel
+        height: calc( 100vh - 245px )
+        overflow: hidden
+        .owl-dots
+            position: absolute
+            top: calc( 100% - 40px )
+            left: 0
+            right: 0
+            margin: auto
+        .owl-dot
+            outline: none
+            span
+                background-color: $white
+                border: 0.5px solid #DEDEDE
+                width: 12px
+                height: 12px
+                transition: .2s
+            &:hover
+                span
+                    background-color: $light-pink
+                    transition: .2s
+        .owl-dot.active
+            span
+                background-color: $pink
+                border: 0.5px solid $pink
+                transition: .2s
+    &__item
+        display: flex
+        justify-content: center
+        position: relative
+        img
+            height: calc( 100vh - 245px )
+            transform: scale(1.2) 
+            width: auto !important
+            overflow: hidden
+    &__item-info
+        position: absolute
+        bottom: 0
+        background-color: #FBFBFB
+        width: 750px
+        height: 170px
+        box-shadow: 0px 0px 34px 0 #574f5477
+    &__title
+        font-size: 32px
+        line-height: 34px
+        margin: 0
+        margin-top: 50px
+        margin-bottom: 14px
+        font-weight: bold
+        font-family: 'Exo 2', sans-serif
+        text-transform: uppercase
+        text-align: center
+        color: $dark-grey
+    &__subtitle
+        margin: 0
+        font-size: 18px
+        color: $grey
+        text-align: center
+        
