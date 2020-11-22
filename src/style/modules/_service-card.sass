@@ -47,14 +47,18 @@
             left: 0
             bottom: 0
     &_with-icon
+        display: flex
+        flex-direction: column
+        justify-content: center
         .service-card__title
             font-size: 18px
             padding-bottom: 0
+            padding-top: 60px
             &::before
                 display: none
         .service-card__icon
             position: absolute
-            top: 30px
+            top: 0
             left: 40px
             transition: .2s
         &:hover
