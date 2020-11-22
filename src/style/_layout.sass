@@ -11,3 +11,13 @@
   &-a-i-c
     display: flex
     align-items: center
+
+
+@for $i from 1 through 36
+  .l
+    &-grid-col-#{$i}
+      display: grid
+      grid-template-columns: repeat($i, 1fr)
+      grid-auto-rows: auto
+    &-grid-gap-#{$i}
+      grid-gap: $i * 1px

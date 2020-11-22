@@ -1,0 +1,28 @@
+.company-description
+    &__title
+        position: relative
+        font-weight: 400
+        font-family: 'Exo 2', sans-serif
+        color: $dark-grey
+        font-size: 40px
+        line-height: 48px
+        margin: 0
+        padding-left: 32px
+        &::before
+            position: absolute
+            content: ''
+            height: calc( 100% - 12px )
+            width: 3px
+            background-color: $pink
+            left: 0
+            top: 0
+            bottom: 0
+            margin: auto
+    &__info-wrapper
+        margin-top: 40px
+    &__info
+        margin-right: 60px
+        line-height: 20px
+        color: $dark-grey
+        &:last-child
+            margin-right: 0
