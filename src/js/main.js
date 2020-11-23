@@ -20,10 +20,35 @@ owlWelcome.owlCarousel({
 
 
 
-var owlWithArrows = $(".owl-carousel_with-arrows");
+var owlFourItems = $(".owl-carousel_4-items");
 
-owlWithArrows.owlCarousel({
-    loop: true,
+owlFourItems.owlCarousel({
+    loop: false,
+    nav: true,
+    navText: ['',''],
+    margin: 16,
+    dots: false,
+    autoplay: false,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 2,
+        },
+        800: {
+            items: 3,
+        },
+        1200: {
+            items: 4,
+        },
+    },
+});
+
+var owlFiveItems = $(".owl-carousel_5-items");
+
+owlFiveItems.owlCarousel({
+    loop: false,
     nav: true,
     navText: ['',''],
     margin: 16,

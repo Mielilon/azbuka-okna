@@ -50,18 +50,23 @@
         left: 0
         top: 0
 
+.dark-grey-text
+    line-height: 20px
+    color: $dark-grey
+    margin: 0
+
 .carousel-wrapper
     margin-top: 40px
     .owl-carousel_with-arrows
-        width: calc( 100% - 60px )
+        width: calc( 100% - 120px )
         position: relative
         .owl-prev
-            left: -50px
+            left: -40px
             transform: rotate(-45deg)
             &:hover
                 transform: rotate(-45deg) scale(1.1)
         .owl-next
-            right: -50px
+            right: -40px
             transform: rotate(135deg)
             &:hover
                 transform: rotate(135deg) scale(1.1)
@@ -71,8 +76,8 @@
             bottom: 0
             margin: auto
             outline: none
-            height: 30px
-            width: 30px
+            height: 25px
+            width: 25px
             border: 3px solid $pink !important
             border-bottom: none !important
             border-right: none !important
@@ -83,3 +88,13 @@
                 transition: .2s
             &:active
                 border-color: $light-pink !important
+        .disabled
+            border-color: #b1b0b0 !important
+            user-select: none
+        .owl-prev.disabled
+            &:hover
+                transform: rotate(-45deg) scale(1) !important
+        .owl-next.disabled
+            &:hover
+                transform: rotate(135deg) scale(1) !important
+        
