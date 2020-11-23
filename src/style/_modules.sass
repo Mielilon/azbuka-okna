@@ -49,3 +49,37 @@
         background-color: $pink
         left: 0
         top: 0
+
+.carousel-wrapper
+    margin-top: 40px
+    .owl-carousel_with-arrows
+        width: calc( 100% - 60px )
+        position: relative
+        .owl-prev
+            left: -50px
+            transform: rotate(-45deg)
+            &:hover
+                transform: rotate(-45deg) scale(1.1)
+        .owl-next
+            right: -50px
+            transform: rotate(135deg)
+            &:hover
+                transform: rotate(135deg) scale(1.1)
+        .owl-prev, .owl-next
+            top: -20px
+            position: absolute
+            bottom: 0
+            margin: auto
+            outline: none
+            height: 30px
+            width: 30px
+            border: 3px solid $pink !important
+            border-bottom: none !important
+            border-right: none !important
+            border-radius: 0 !important
+            transition: .2s
+            &:hover
+                background-color: transparent
+                transition: .2s
+            &:active
+                border-color: $light-pink !important
