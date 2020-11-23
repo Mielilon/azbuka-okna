@@ -4,9 +4,9 @@
             h3.request__title ОСТАВЬТЕ ЗАЯВКУ!
             form(action="").request__form.l-grid-col-1
                 .request__inputs-wrapper.l-grid-col-3.l-grid-gap-20
-                    input#request-name(type="text" name="request-name" placeholder="Ваше имя" recuired).request__input.request__input_text
-                    input#request-tel(type="tel" name="request-tel" placeholder="Телефон" recuired).request__input.request__input_text
-                    input#request-email(type="email" name="request-email" placeholder="E-mail" recuired).request__input.request__input_text
+                    input#request-name(type="text" name="request-name" placeholder="Ваше имя" required).request__input.request__input_text
+                    input#request-tel(type="tel" name="request-tel" placeholder="Телефон" required).request__input.request__input_text
+                    input#request-email(type="email" name="request-email" placeholder="E-mail" required).request__input.request__input_text
                 textarea#request-message(name="request-message" placeholder="Сообщение").request__textarea
                 .request__button-wrapper.l-j-c-c
-                    button.button.button_pink Отправить
+                    button(type='submit').button.button_pink Отправить
