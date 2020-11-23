@@ -20,3 +20,18 @@
             margin-right: 40px
             &:last-child
                 margin-right: 0
+
+@include respond-to(lg)
+    .header
+        .content
+            justify-content: center
+        &__menu
+            .menu__item
+                margin-right: 20px
+        &__address
+            display: none
+@include respond-to(xs)
+    .header
+        &__menu
+            .menu__item
+                margin-right: 10px

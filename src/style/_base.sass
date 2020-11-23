@@ -10,6 +10,7 @@ body, html
 
 *
   box-sizing: border-box
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 a
   color: inherit
@@ -31,6 +32,8 @@ a
     grid-template-columns: auto [p-start] 30px [c-start] 480px [c-end] 30px [p-end] auto
   @include respond-to(sm)
     grid-template-columns: [p-start] 15px [c-start] auto [c-end] 15px [p-end]
+  @include respond-to(xs)
+    grid-template-columns: [p-start] 10px [c-start] auto [c-end] 10px [p-end]
   &>.content 
     grid-column: c-start/c-end
 

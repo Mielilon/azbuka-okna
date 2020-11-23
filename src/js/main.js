@@ -33,10 +33,10 @@ owlFourItems.owlCarousel({
         0: {
             items: 1,
         },
-        400: {
+        768: {
             items: 2,
         },
-        800: {
+        992: {
             items: 3,
         },
         1200: {
@@ -58,13 +58,13 @@ owlFiveItems.owlCarousel({
         0: {
             items: 1,
         },
-        400: {
-            items: 2,
-        },
-        800: {
+        992: {
             items: 3,
         },
         1200: {
+            items: 4,
+        },
+        1400: {
             items: 5,
         },
     },

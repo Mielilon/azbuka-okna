@@ -20,3 +20,15 @@
         text-decoration: none
         font-size: 18px
         font-weight: 700
+
+@include respond-to(md)
+    .footer
+        .content
+            flex-direction: column
+            padding-bottom: 0
+        &__items-wrapper
+            padding-bottom: 0
+            &:last-child
+                padding-top: 0
+                text-align: start
+        

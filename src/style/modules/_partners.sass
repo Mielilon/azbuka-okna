@@ -1,3 +1,19 @@
 .partners
     &__info-wrapper
         margin-top: 38px
+
+@include respond-to(lg)
+    .partners
+        &__info-wrapper
+            grid-template-columns: 1fr
+@include respond-to(md)
+    .partners
+        &__logo-wrapper
+            grid-template-columns: 1fr 1fr
+            align-items: center
+            justify-items: center
+
+@include respond-to(xs)
+    .partners
+        &__logo-wrapper
+            grid-template-columns: 1fr

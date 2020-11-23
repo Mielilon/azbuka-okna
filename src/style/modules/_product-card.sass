@@ -37,3 +37,18 @@
         margin-bottom: -16px
         strong
             font-size: 22px
+
+@include respond-to(xxl)
+    .product-cards
+        .content
+            grid-template-columns: 1fr 1fr 
+    .product-card
+        &__description
+            font-size: 20px
+        &__info-wrapper
+            padding: 30px 30px 30px
+
+@include respond-to(md)
+    .product-cards
+        .content
+            grid-template-columns: 1fr 

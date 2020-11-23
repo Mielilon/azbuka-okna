@@ -20,3 +20,26 @@
         text-align: end
     &__info-wrapper
         margin-right: 40px
+
+@include respond-to(lg)
+    .hat
+        &__logo-description
+            display: none
+@include respond-to(md)
+    .hat
+        .button
+            display: none
+@include respond-to(xs)
+    .hat
+        padding: 5px
+        &__logo
+            height: 65px
+            top: -5px
+        &__number
+            font-size: 18px
+        &__number-description
+            font-size: 12px
+            line-height: 22px
+            letter-spacing: 0.2px
+        &__info-wrapper
+            margin-right: 0

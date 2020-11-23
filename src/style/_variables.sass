@@ -1,5 +1,5 @@
 // Variables and mixins
-
+$xsmall: 400px
 $small: 576px
 $medium: 768px
 $large: 992px
@@ -7,7 +7,10 @@ $xlarge: 1200px
 $xxlarge: 1400px
 
 @mixin respond-to($media)
-  @if $media == sm
+  @if $media == xs
+    @media only screen and (max-width: $xsmall - 1)
+      @content
+  @else if $media == sm
     @media only screen and (max-width: $small - 1)
       @content
 
@@ -64,3 +67,4 @@ $light-pink: #F89DC6
   background-repeat: no-repeat
   background-position: center
   background-size: cover
+

@@ -1,4 +1,6 @@
 .reviews
+    .content
+        overflow: hidden
     &__item
         background-color: #F3F3F3
         border-radius: 6px
@@ -6,3 +8,13 @@
     &__content
         font-size: 16px
         line-height: 22px
+
+@include respond-to(xs)
+    .reviews
+        &__item
+            background-color: #F3F3F3
+            border-radius: 6px
+            padding: 18px 20px 8px
+        &__content
+            font-size: 12px
+            line-height: 18px

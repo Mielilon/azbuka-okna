@@ -15,3 +15,13 @@
         align-items: center
         max-width: 300px
         padding: 10px
+
+@include respond-to(lg)
+    .advantages
+        &__items-wrapper
+            flex-wrap: wrap
+
+@include respond-to(md)
+    .advantages
+        &__items-wrapper
+            flex-direction: column

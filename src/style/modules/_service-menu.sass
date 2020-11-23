@@ -12,3 +12,22 @@
     &__img
         display: flex
         align-items: center
+@include respond-to(xl)
+    .service-menu
+        .content
+            overflow: auto
+        &__item
+            margin-right: 30px
+            &:first-child
+                padding-left: 100px
+        
+@include respond-to(md)
+    .service-menu
+        &__item
+            &:first-child
+                padding-left: 280px
+@include respond-to(sm)
+    .service-menu
+        &__item
+            &:first-child
+                padding-left: 400px

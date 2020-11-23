@@ -33,11 +33,11 @@
         display: flex
         justify-content: center
         position: relative
+        overflow: hidden
         img
             height: calc( 100vh - 245px )
-            transform: scale(1.2) 
-            width: auto !important
-            overflow: hidden
+            transform: scale(1.2)
+            width: 100%
     &__item-info
         position: absolute
         bottom: 0
@@ -61,4 +61,45 @@
         font-size: 18px
         color: $grey
         text-align: center
-        
+
+@include respond-to(md)
+    .welcome-carousel
+        &__item-info
+            width: 500px
+            height: 150px
+        &__title
+            font-size: 26px
+            margin-top: 36px
+            margin-bottom: 10px
+        &__subtitle
+            font-size: 16px
+
+@include respond-to(sm)
+    .welcome-carousel
+        &__item-info
+            width: 350px
+            height: 120px
+        &__title
+            font-size: 22px
+            margin-top: 20px
+            margin-bottom: 0px
+        &__subtitle
+            font-size: 14px
+
+@include respond-to(xs)
+    .welcome-carousel
+        height: calc( 100vh - 210px )
+        .owl-carousel
+            height: calc( 100vh - 210px )
+        &__item img
+            height: calc( 100vh - 210px )
+            transform: scale(2, 1)
+        &__item-info
+            width: 290px
+            height: 120px
+        &__title
+            font-size: 16px
+            margin-top: 20px
+            margin-bottom: 0px
+        &__subtitle
+            font-size: 12px
